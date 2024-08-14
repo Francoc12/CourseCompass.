@@ -11,14 +11,14 @@ services:
       - db
     environment:
       DATABASE_NAME: proyecto-desarrollo-web
-      DATABASE_USER: manu
-      DATABASE_PASSWORD: 1234
-      DATABASE_HOST: db
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: banana
+      DATABASE_HOST: bd
       DATABASE_PORT: 5432
 
   db:
     image: postgres
     environment:
       POSTGRES_DB: proyecto-desarrollo-web
-      POSTGRES_USER: manu
-      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: banana
